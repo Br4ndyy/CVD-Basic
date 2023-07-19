@@ -254,15 +254,12 @@ img {
 	padding-top: 13rem;
 	padding-bottom: 5rem;
 }
-.abt__banner .abt__banner__wrapper{
-	display:grid;
-	grid-template-columns:2fr 2fr;
-	grid-gap:20rem;
-}
+
 
 .abt__banner .abt__banner__wrapper{
 	display:flex;
 	align-items:center;
+	gap:20rem;
 }
 
 .abt__banner .abt__banner__text{
@@ -278,7 +275,6 @@ img {
 	font-size:7rem;
 	font-weight:800;
 }
-
 
 .abt__banner .abt__banner__btn ul{
 	display:flex;
