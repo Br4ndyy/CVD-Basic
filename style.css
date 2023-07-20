@@ -131,6 +131,8 @@ img {
 	position: relative;
 	position: fixed;
 	width: 100%;
+	z-index:999;
+	filter: drop-shadow(0 3px 7px #2b2b2b);
 }
 
 .header .branding {
@@ -341,6 +343,9 @@ img {
 
 	.abt__banner .abt__banner__btn ul{
 		justify-content:center;
+	}
+	.abt__banner .abt__banner__btn ul li a:hover{
+		color:#ffa700
 	}
 }
 
@@ -797,6 +802,11 @@ img {
 	margin-bottom: 12rem;
 }
 
+.proj .proj__wrapper .card:hover{
+	transform:scale(1.1);
+	transition: .5s ease;
+}
+
 .proj .proj__text{
 	margin-top: 6rem;
 }
@@ -834,18 +844,23 @@ img {
 }
 
 @media screen and (max-width: 500px){
-	.proj .proj__text{
-		padding: 0 7rem;
-	}
-
 	.proj .proj__text h2:first-child{
 		font-size:3rem;
+		display:flex;
+		justify-content:center;
+	}
+
+	.proj .proj__text h2:nth-child(2){
+		display:flex;
+		justify-content:center;
 	}
 
 	.proj .proj__wrapper{
 		display:grid;
 		grid-template-columns: 1fr;
-		margin: 0 7rem;
+		margin-left:7rem;
+		margin-right:7rem;
+		margin-bottom:9rem;
 	}
 
 	.proj .proj__wrapper .card{
@@ -853,6 +868,86 @@ img {
 	}
 }
 
+/*------CONTACT------*/
+.contact{
+	padding-top:13rem;
+	padding-bottom:5rem;
+	background:#2b2b2b;
+}
+
+.contact .contact__wrapper{
+	margin:5rem 0;
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap:10rem;
+}
+.contact .contact__fill{
+	margin-top:13rem;
+	text-align:right;
+}
+.contact .contact__fill a{
+	text-align:right;
+}
+.contact .contact__fill form{
+	display:flex;
+	flex-direction:column;
+	gap:3rem;
+	justify-content:flex-start;
+	margin-bottom:3rem;
+}
+
+.contact .contact__text p{
+	color:#ffffff;
+	margin-bottom:5rem;
+}
+
+.contact .contact__text h2{
+	color:#ffa700;
+	font-size:6rem;
+	font-weight:750;
+	margin-bottom:5rem;
+}
+
+.contact .contact__text ul{
+	color:#ffffff;
+	line-height:7rem;
+	margin-bottom:1rem;
+}
+.contact .contact__text ul li{
+	color:#ffffff;
+	display:flex;
+}
+.contact .contact__text ul li i{
+	color:#ffa700;
+	margin-right:5rem;
+	font-size:2.5rem;
+	margin-top:2.1rem;
+	width:6px;
+}
+.contact .contact__horizontal ul{
+	display:flex;
+	flex-direction:row;
+}
+.contact .contact__horizontal ul li i{
+	color:#ffffff;
+	display:flex;
+	flex-direction:row;
+}
+
+.contact .contact__fill form input:first-child, .contact .contact__fill form input:nth-child(2){
+	height:5rem;
+	border-radius:0.5rem;
+}
+
+.contact .contact__fill form input:last-child{
+	height:15rem;
+}
+/*------SERVICES------*/
+
+.services{
+	padding-top:13rem;
+	padding-bottom:5rem;
+}
 /*------REPEATABLE PATTERN------*/
 
 .btn{
