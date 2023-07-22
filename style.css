@@ -873,6 +873,8 @@ img {
 	padding-top:13rem;
 	padding-bottom:5rem;
 	background:#2b2b2b;
+	padding-bottom: 8rem;
+	border-bottom: 1px solid gray;
 }
 
 .contact .contact__wrapper{
@@ -949,14 +951,44 @@ img {
 	.contact .contact__wrapper{
 		display:grid;
 		grid-template-columns:1fr;
+		gap:1rem;
 	}
 	.contact .contact__text ul li:nth-child(3){
 		line-height:3rem;
 		margin-top:2rem;
+		margin-bottom: 1rem;
 	}
-	.contact .contact__twrapper .contact__horizontal ul:nth-child(3) li i{
-	color:#2b2b2b;
-}
+	.contact .contact__text .contact__horizontal ul{
+		display: flex;
+		justify-content: center;
+	}
+	.contact .contact__text .contact__horizontal ul:nth-child(1) li:nth-child(3) a i{
+		color:#ffffff;
+		line-height:0;
+	}
+	.contact .contact__text .contact__horizontal ul:nth-child(1) li:nth-child(1) a i{
+		color:#ffffff;
+		line-height:4rem;
+	}
+	.contact .contact__text .contact__horizontal ul:nth-child(1) li:nth-child(2) a i{
+		color:#ffffff;
+		line-height:4rem;
+	}
+	.contact .contact__text .contact__horizontal ul:nth-child(1) li:nth-child(4) a i{
+		color:#ffffff;
+		line-height:4rem;
+	}
+	.contact .contact__fill form{
+		width:100%;
+		margin-bottom:rem;
+	}
+	.contact .contact__fill a{
+		text-align: center;
+		margin-right: 15rem;
+	}
+	.contact .contact__fill{
+		margin: 3rem 0;
+	}
 }
 /*------SERVICES------*/
 
@@ -1080,6 +1112,7 @@ img {
 	.services .services__outer:first-child .services__text{
 		order: 2;
 	}
+	
 }
 
 
