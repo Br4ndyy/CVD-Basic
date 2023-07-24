@@ -1122,9 +1122,10 @@ img {
 	}
 	.services .services__outer .services__text h2 {
 		display: flex;
-		font-size: 4rem;
+		font-size: 2rem;
 		justify-content: center;
-		padding-left: 10rem;
+		padding-left: 9rem;
+		padding-right: 10rem;
 	}
 	.services .services__outer .services__text p {
 		display: flex;
